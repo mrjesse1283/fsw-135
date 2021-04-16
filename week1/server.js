@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(morgan('dev')) 
 
 //connection to DB
-mongoose.connect('mongodb://localhost:27017/inventorydb',
+mongoose.connect('mongodb://localhost:27017/Inventory',
 {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -17,6 +17,11 @@ mongoose.connect('mongodb://localhost:27017/inventorydb',
 },
 () => console.log("connected to DB")
 )
+
+//test to see if mongo is connected
+mongoose.connection.on('connected', ()=> {
+    console.log('mongo is connected')
+})
 
 //get
 app.get("/", (req, res )=> {

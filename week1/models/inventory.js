@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const schema = mongoose.schema
+const Schema = mongoose.schema
 
 
 const inventorySchema = new Schema({
