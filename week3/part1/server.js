@@ -23,7 +23,9 @@ mongoose.connection.on('connected', ()=> {
     console.log('mongo is connected')
 })
 
-app.use("/", require("./routes/userRouter"))
+app.use("/user", require("./routes/userRouter"))
+app.use("/issue", require("./routes/issueRouter"))
+app.use("/comment", require("./routes/commentRouter"))
 
 
 //error handler 
