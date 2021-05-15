@@ -19,7 +19,9 @@
   "homepage": "https://github.com/mrjesse1283/fsw-135#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.12.3",
-    "morgan": "^1.10.0"
+    "express-jwt": "^6.0.0",
+    "mongoose": "^5.12.9",
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.2"
   }
 }
