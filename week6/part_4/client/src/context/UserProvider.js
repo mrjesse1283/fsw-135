@@ -15,25 +15,10 @@ export default function UserProvider(props) {
   const initState = {
     user: JSON.parse(localStorage.getItem('user')) || {},
     token: localStorage.getItem('token') || "",
-    issues: [],
-    errMsg: ''
+    issues: []
   }
 
   const [userState, setUserState] = useState(initState)
-
-  function handleAuthError(errMsg) {
-    setUserState(prevState => ({
-      ...prevState,
-      errMsg
-    }))
-  }
-
-  function resetAuthErr() {
-    setUserState(prevState => ({
-      ...prevState,
-      errMsg: ''
-    }))
-  }
 
   function signup(credentials) {
     axios.post('/auth/signup', credentials)
@@ -47,7 +32,7 @@ export default function UserProvider(props) {
           token
         }))
       })
-      .catch(err => handleAuthError(err.response.data.errMsg))
+      .catch(err => console.log(err))
   }
   function login(credentials) {
     axios.post('/auth/login', credentials)
@@ -62,7 +47,7 @@ export default function UserProvider(props) {
           token
         }))
       })
-      .catch(err => handleAuthError(err.response.data.errMsg))
+      .catch(err => console.log(err))
   }
 
   function logout() {
@@ -102,9 +87,7 @@ export default function UserProvider(props) {
        signup, 
        login, 
        logout,
-       addIssue,
-       resetAuthErr 
-       }}>
+       addIssue }}>
       { props.children}
     </UserContext.Provider>
   )

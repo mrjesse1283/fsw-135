@@ -1,0 +1,109 @@
+body {
+    background-color: grey;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+.auth-container {
+    background-color: rgb(38, 93, 155);
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 30px;
+}
+.auth-input {
+    margin: 5px;
+    height:auto;
+    padding: 4px;
+    
+}
+.btn {
+    margin: 1px;
+    height: auto;
+    width: 100 px;
+    padding: 4px;
+    background-color: green;
+    border: none;
+    border-radius: 20px;
+}
+.profile {
+    background-color: rgb(41, 20, 158);
+    color: seashell;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+}
+.issue-input {
+    margin: 10px;
+    height: auto;
+    width: 100 px;
+    padding: 4px;
+    background-color: white;
+    border: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+.nav-link {
+    color: rgb(38, 67, 155);
+    text-decoration: none;
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+    font-size: 35px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: white;
+    color: black;
+
+}
+.logout-btn {
+    margin: 10px;
+    height: auto;
+    width: 100 px;
+    padding: 4px;
+    background-color: rgb(38, 67, 155);
+    color: white;
+    border: none;
+    margin-left: 160px;
+}
+.voteBtn {
+    margin: 20px;
+    background-color: white;
+    border: none;
+    height: auto;
+}
+.deleteBtn {
+    background-color: white;
+    border: none;
+    height: auto;
+}
+.submitCommentBtn {
+    background-color: white;
+    border: none;
+    height: auto;  
+}
+.commentForm {
+    margin: 20px;
+}
